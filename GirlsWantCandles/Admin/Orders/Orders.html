@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <title>Admin | Girls want candles</title>
+        <link rel="stylesheet" href="../../Website/Style.css">
+        <style>
+            table{
+                margin: auto;
+                border-collapse: collapse;
+            }
+            td{
+                border-bottom: 1px solid #fff;
+            }
+            .input{
+                background-color: #1D1C1A;
+                border: none;
+                font-family: 'Jost', sans-serif;
+                color: #fff;
+                font-size: 16px;
+            }
+            .text{
+                width: 130px;
+            }
+            .description{
+                width: 400px;
+                height: 130px;
+            }
+            .number{
+                width: 60px;
+            }
+            .submit_1{
+                width: 150px;
+                height: 30px;
+                border-radius: 5px;
+                padding: 2px;
+                font-family: 'Jost', sans-serif;
+                margin-bottom: 5px;
+            }
+            .background{
+                background-color: #333;
+                border-radius: 10px;  
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="../jQuery.js"></script>
+        <script src="OrdersRequests.js"></script>
+        <header>
+            <div>
+                <a href="../Admin.php"><img src="../../Images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <a href="../Category/Category.html">Категории</a>
+                <a href="../Products/Products.html">Товары</a>
+                <a href="Orders.html">Заказы</a>
+            </div>
+        </header>
+        <br><h2>ЗАКАЗЫ</h2>
+        <table>
+            <tr>
+                <td>Имя</td>
+                <td>Телефон</td>
+                <td>Адрес</td>
+                <td>Товар</td> 
+                <td>Кол-во</td>
+                <td>Дата</td>
+                <td>Состояние</td>
+                <td></td>
+            </tr>
+        
+        </table>
+        <br>
+        <div id="changeHistory" class="background">
+            ИСТОРИЯ ИЗМЕНЕНИЙ<br>
+        </div>
+    </body>
+</html>
+

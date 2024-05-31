@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <title>Products</title>
+        <link rel="stylesheet" href="../../Website/Style.css">
+        <style>
+            .input{
+                background-color: #1D1C1A;
+                border: none;
+                font-family: 'Jost', sans-serif;
+                color: #fff;
+                font-size: 16px;
+            }
+            .text{
+                width: 400px;
+            }
+            .description{
+                width: 400px;
+                height: 130px;
+            }
+            .number{
+                width: 60px;
+            }
+            .submit_1{
+                width: 150px;
+                height: 30px;
+                border-radius: 5px;
+                padding: 2px;
+                font-family: 'Jost', sans-serif;
+                margin-bottom: 5px;
+            }
+            .form{
+                background-color: #333;
+                border-radius: 20px;
+                padding: 10px;
+                height: 400px;
+            }
+            .background{
+                background-color: #333;
+                border-radius: 10px;  
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="../jQuery.js"></script>
+        <script src="ProductsRequests.js"></script>
+        <header>
+            <div>
+                <a href="../Admin.php"><img src="../../Images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <a href="../Category/Category.html">Категории</a>
+                <a href="Products.html">Товары</a>
+                <a href="../Orders/Orders.html">Заказы</a>
+            </div>
+        </header>
+        <br>
+        <h2>КАТАЛОГ ТОВАРОВ</h2>
+        <div class="product-grid">
+            <div class="product-card form">
+                Путь: <br><input type='text' name='path_img' placeholder='Путь до изображения' class='text input' require><br>
+                Название: <input type='text' name='name' placeholder='Название' class='text input' require><br>
+                Описание: <textarea name='description' class='input description' placeholder='Описание' require></textarea>
+                Категория: <select name='id_category'></select><br><br>
+                Наличие: <select id="availability">
+                    <option value="0">Отсутсвует</option>
+                    <option value="1">В наличии</option>
+                </select>
+                Цена: <input type='number' name='price' class='input number' placeholder='0' require> руб<br><br>
+                <input type='button' name='create' value='Создать' class='submit_1'>
+            </div>
+        </div>
+        <div id="changeHistory" class="background">
+            ИСТОРИЯ ИЗМЕНЕНИЙ<br>
+        </div>
+    </body>
+</html>

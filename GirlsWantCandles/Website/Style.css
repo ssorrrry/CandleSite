@@ -1,0 +1,130 @@
+
+body{
+    background: #1D1C1A;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+/* Верхнее меню */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.main{
+    text-align: center;
+}
+.profile{
+    margin-left: 30px;
+}
+
+/* Блок каталог */
+.main-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo-item {
+    max-width: 500px;
+    margin: 10px;
+}
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    padding: 10px;
+}
+.product-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+select{
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: 'Jost', sans-serif;
+    margin-left: 20px;
+}
+.submit_1{
+    border: none;
+    background-color: #fff;
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    
+}
+
+.cart-item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.input-number{
+    border: none;
+    background-color: #6b6b6b;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: 'Jost', sans-serif;
+}
+
+
